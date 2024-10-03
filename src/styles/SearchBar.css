@@ -1,0 +1,80 @@
+/* common */
+.search-bar-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    border: 3px solid #0091E4;
+    border-radius: 12px;
+}
+
+.gps-icon {
+    cursor: pointer;
+}
+
+.search-input {
+    height: 80%;
+    border: none;
+    width: 90%;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+/* pc */
+@media screen and (min-width:1280px) {
+    .search-bar-wrapper {
+        height: 5rem;
+        width: 80vw;
+        margin-bottom: 3rem;
+    }
+
+    .gps-icon {
+        height: 70%;
+        margin-left: 1rem;
+    }
+
+    .search-input {
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+/* tablet */
+@media screen and (min-width:769px) and (max-width: 1279px) {
+    .search-bar-wrapper {
+        height: 4.5rem;
+        width: 85vw;
+        margin-bottom: 2.6rem;
+    }
+
+    .gps-icon {
+        height: 70%;
+        margin-left: 1rem;
+    }
+
+    .search-input {
+        margin-left: 1rem;
+        font-size: 1.4rem;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    .search-bar-wrapper {
+        height: 4rem;
+        width: 90vw;
+        margin-bottom: 2.2rem;
+    }
+
+    .gps-icon {
+        height: 70%;
+        margin-left: 1rem;
+    }
+
+    .search-input {
+        margin-left: 1rem;
+        font-size: 1.3rem;
+    }
+}
